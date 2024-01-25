@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="cmyk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Littandart</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @font-face {
+        font-family: "Nala";
+        src: url(KINKEE__.TTF);
+     
+      }
+      @font-face {
+        font-family: "EMOTICON";
+        src: url(Emot-WyKVV.ttf);
+      }
+      .globe-item__primary {
+        top: -15%;
+        left: -10%;
+      }
+      .globe-item__success {
+        left: 10%;
+        bottom: -35%;
+      }
+      .globe-item__warning {
+        right: -15%;
+        bottom: -10%;
+      }
+      .globe-item__danger {
+        right: -10%;
+        top: -15%;
+      }
+
+      .globe-item {
+        /* blur */
+        filter: blur(90px);
+        /* shadow */
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.5);
+        /* border */
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        /* border-radius */
+        border-radius: 50%;
+        /* position */
+        position: absolute;
+        /* animation */
+        animation: blob 5s ease infinite;
+      }
+
+      .globe-item:nth-child(1) {
+        animation: blob 5s ease infinite;
+      }
+
+      .globe-item:nth-child(2) {
+        animation: blob 5s ease infinite 1s;
+      }
+
+      .globe-item:nth-child(3) {
+        animation: blob 5s ease infinite 2s;
+      }
+
+      .globe-item:nth-child(4) {
+        animation: blob 5s ease infinite 3s;
+      }
+      @keyframes blob {
+        0% {
+          transform: scale(1) translate(0);
+        }
+        33% {
+          transform: scale(1.1) translate(20px, 20px);
+        }
+        66% {
+          transform: scale(0.9) translate(-20px, -20px);
+        }
+
+        100% {
+          transform: scale(1) translate(0);
+        }
+      }
+
+      .kawai-text {
+        font-family: "Nala", system-ui;
+      }
+     .emot{
+      font-family: "EMOTICON", system-ui;
+     }
+     .primary-text{
+      font-family: 'Poppins', sans-serif;
+     }
+  
+
+    .emot-animate {
+      display: none;
+      transition: transform 0.5s ease-in-out;
+      /* animation: swap 1s infinite; Adjust the duration and other properties as needed */
+    }
+    .show {
+      display: inline-block;
+      transform: rotateY(0deg);
+    }
+
+    .hide {
+      transform: rotateY(90deg);
+    }
+    </style>
+  </head>
+  <body>
+    <section
+      class="section-hero container mx-auto flex flex-col md:flex-row justify-between items-center"
+    >
+      <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 "
+            >
+              <li><a >Home</a></li>
+              <li><a >About me</a></li>
+              <li>
+                <a >My Art</a>
+                <ul class="p-2">
+                  <li><a>Submenu 1</a></li>
+                  <li><a>Submenu 2</a></li>
+                </ul>
+              </li>
+              <li ><a >Contact</a></li>
+            </ul>
+          </div>
+          <a class="btn btn-ghost text-3xl text-pink-500 kawai-text">Littandart</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a>Home</a></li>
+            <li><a>About Me</a></li>
+            <li>
+              <details>
+                <summary>My Art</summary>
+                <ul class="p-2">
+                  <li><a>Submenu 1</a></li>
+                  <li><a>Submenu 2</a></li>
+                </ul>
+              </details>
+            </li>
+            <li><a>Contact</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end"></div>
+      </div>
+    </section>
+    <section
+      class="section-hero primary-text container pt-10 mx-auto flex flex-col md:flex-row justify-between items-center lg:h-[90vh] relative w-full px-4 md:py-5 lg:py-0 primary-text"
+    >
+      <div class="flex flex-col md:flex-nowrap lg:flex-row">
+        <div class="flex items-center">
+          <div class="w-11/12 space-y-5 md:space-y-10">
+            <!-- <h3
+              class="bg-pink-500 text-gray-100 w-fit md:py-3 md:px-5 py-1 px-2 rounded-lg 3xl:text-3xl 2xl:text-xl lg:text-xl md:text-md text-sm font-semibold font-work_sans"
+            >
+              👋 Hola,
+            </h3> -->
+            <h3
+              class=" text-pink-500 w-fit 3xl:text-6xl 2xl:text-5xl text-3xl font-semibold "
+            >
+              👋 Hola,
+            </h3>
+            <h1
+              class="3xl:text-8xl 2xl:text-7xl xl:text-6xl text-4xl font-bold leading-tight text-gray-700"
+            >
+              It's
+              <a
+                href="https://www.linkedin.com/"
+                target="_blank"
+                class="text-pink-500 hover:underline kawai-text md:text-8xl text-5xl"
+              >
+                Littandart </a
+              >
+              <span class="emot emot-animate text-pink-500" id="emot-animate-1">B</span> 
+              <span class="emot emot-animate text-pink-500" id="emot-animate-2">7</span> 
+              <span class="emot emot-animate text-pink-500" id="emot-animate-3">K</span> 
+              <span class="emot emot-animate text-pink-500" id="emot-animate-4">S</span> 
+              
+            </h1>
+            <span class="text-md md:text-6xl font-bold leading-tight text-gray-700"
+            >Creative Designer and Fanart Artist</span>
+
+            <div class="md:flex gap-1 md:gap-10">
+              <button
+                class="text-white bg-pink-500 border-2 border-pink-300 3xl:text-xl 2xl:text-xl lg:text-xl md:text-xl text-lg md:mb-0 mb-10 py-2 px-4 lg:py-4 lg:px-8 rounded-2xl font-work_sans font-semibold "
+              >
+                View My Work
+              </button>
+              <button
+                class="text-gray-800 border-4 border-gray-800 3xl:text-xl 2xl:text-xl lg:text-xl md:text-xl text-xs py-2 px-4 lg:py-4 lg:px-8 rounded-2xl font-work_sans font-semibold mb-5 md:mb-0 hidden md:block"
+              >
+                Contact Me
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="max-w-full md:w-7/12 feature-image-box mt-5 relative">
+          <div class="globe opacity-30">
+            <div
+              class="globe-item globe-item__primary rounded-full absolute z-10 w-[100px] h-[100px] bg-gradient-to-tr from-violet-400 to-violet-600 lg:w-96 lg:h-96"
+            ></div>
+            <div
+              class="globe-item globe-item__warning rounded-full absolute z-10 hidden md:block md:w-96 md:h-96 bg-gradient-to-tr from-pink-300 to-pink-300"
+            ></div>
+            <div
+              class="globe-item globe-item__success rounded-full absolute z-10 w-60 h-60 md:w-96 md:h-96 bg-gradient-to-tr from-pink-500 to-pink-300"
+            ></div>
+            <div
+              class="globe-item globe-item__danger rounded-full absolute z-10 hidden md:block md:w-[300px] md:h-[300px] bg-gradient-to-tr from-red-300 to-red-700"
+            ></div>
+          </div>
+
+          <div
+            class="md:mx-20 w-full min:h-[300px] relative rounded-2xl border-8 border-white border-opacity-30 dark:border-opacity-70 dark:border-black/30 bg-white dark:bg-gray-900 backdrop-blur bg-opacity-10 dark:bg-opacity-20 shadow-2xl dark:shadow-2xl group hover:cursor-pointer mb-12 overflow-hidden"
+          >
+            <div class="h-full w-full relative">
+              <img src="img/nala.jpeg" />
+              <div
+
+                class="overlay absolute top-0 right-0 bottom-0 left-0 bg-gray-900 grid place-items-center text-white bg-opacity-10 group-hover:bg-opacity-80 duration-300 backdrop-blur-[0px] group-hover:backdrop-blur-[5px] z-10"
+              >
+                <div class="flex flex-col items-center">
+                  <a
+                    class="text-white -translate-y-5 scale-0 group-hover:scale-100 group-hover:-translate-y-0 transition-all duration-300"
+                    >Litta^^</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div
+              class="p-4 w-full bg-white dark:bg-black/50 text-center flex justify-center bg-opacity-60 z-20"
+            >
+              <a class="text-xl" href=""> </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script>
+     document.addEventListener("DOMContentLoaded", function () {
+      var emotIndex = 1;
+
+      function showEmot() {
+        // Hide all emoticons
+        document.querySelectorAll('.emot-animate').forEach(function (emot) {
+          emot.classList.remove('show');
+          emot.classList.add('hide');
+        });
+
+        // Show the current emoticon
+        var currentEmot = document.getElementById('emot-animate-' + emotIndex);
+        currentEmot.classList.remove('hide');
+        currentEmot.classList.add('show');
+
+        emotIndex = (emotIndex % 4) + 1;
+      }
+
+      // Show the first emoticon initially
+      showEmot();
+
+      // Change emoticons every 4 seconds
+      setInterval(showEmot, 4000);
+    })
+    </script>
+  </body>
+</html>
