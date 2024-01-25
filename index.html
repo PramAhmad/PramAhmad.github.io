@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="cmyk">
+<html lang="en" data-theme="cmyk" dark="">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -13,6 +13,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- tailwind config -->
+    <script>
+      tailwind.config = {
+        daisyui:{
+         darkTheme: "dark",
+        }
+      }
+    </script>
+
     <style>
       @font-face {
         font-family: "Nala";
@@ -189,13 +198,13 @@
               👋 Hola,
             </h3>
             <h1
-              class="3xl:text-8xl 2xl:text-7xl xl:text-6xl text-4xl font-bold leading-tight text-gray-700"
+              class="3xl:text-8xl 2xl:text-7xl xl:text-6xl text-3xl font-bold leading-tight text-gray-700"
             >
               It's
               <a
                 href="https://www.linkedin.com/"
                 target="_blank"
-                class="text-pink-500 hover:underline kawai-text md:text-8xl text-5xl"
+                class="text-pink-500 hover:underline kawai-text md:text-8xl text-4xl"
               >
                 Littandart </a
               >
@@ -222,7 +231,7 @@
             </div>
           </div>
         </div>
-        <div class="max-w-full md:w-7/12 feature-image-box mt-5 relative">
+        <div class="max-w-full md:w-6/12 feature-image-box mt-5 relative">
           <div class="globe opacity-30">
             <div
               class="globe-item globe-item__primary rounded-full absolute z-10 w-[100px] h-[100px] bg-gradient-to-tr from-violet-400 to-violet-600 lg:w-96 lg:h-96"
