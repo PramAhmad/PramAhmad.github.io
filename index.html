@@ -122,9 +122,16 @@
     .hide {
       transform: rotateY(90deg);
     }
+    .section-hero {
+      position: relative;
+    }
+
+   .wavebg{
+    z-index: -1;
+   }
     </style>
   </head>
-  <body class="bg-gray-50">
+  <body class="bg-gray-50 h-full">
     <section
       class="section-hero container mx-auto flex flex-col md:flex-row justify-between items-center"
     >
@@ -235,18 +242,18 @@
           </div>
         </div>
         <div class="max-w-full md:w-6/12 feature-image-box mt-5 relative">
-          <div class="globe opacity-30">
+          <div class="globe opacity-30 max-w-full">
             <div
-              class="globe-item globe-item__primary rounded-full absolute z-10 w-[100px] h-[100px] bg-gradient-to-tr from-violet-400 to-violet-600 lg:w-96 lg:h-96"
+              class="globe-item globe-item__primary rounded-full absolute z-10 w-60 h-60 md:w-96 md:h-96 bg-gradient-to-tr from-pink-400 to-pink-600 lg:w-96 lg:h-96"
             ></div>
             <div
-              class="globe-item globe-item__warning rounded-full absolute z-10 hidden md:block md:w-96 md:h-96 bg-gradient-to-tr from-pink-300 to-pink-300"
+              class="globe-item globe-item__warning rounded-full absolute hidden md:block z-10 w-44 h-44 md:w-96 md:h-96 bg-gradient-to-tr from-pink-300 to-pink-300"
             ></div>
             <div
-              class="globe-item globe-item__success rounded-full absolute z-10 w-60 h-60 md:w-96 md:h-96 bg-gradient-to-tr from-pink-500 to-pink-300"
+              class="globe-item globe-item__success  hidden md:block rounded-full absolute z-10 w-44 h-44 md:w-96 md:h-96 bg-gradient-to-tr from-violet-500 to-violet-300"
             ></div>
             <div
-              class="globe-item globe-item__danger rounded-full absolute z-10 hidden md:block md:w-[300px] md:h-[300px] bg-gradient-to-tr from-red-300 to-red-700"
+              class="globe-item globe-item__danger rounded-full  hidden md:block absolute z-10 w-44 h-44 md:w-96 md:h-96  bg-gradient-to-tr from-red-300 to-red-700"
             ></div>
           </div>
 
@@ -264,6 +271,7 @@
                     class="text-white -translate-y-5 scale-0 group-hover:scale-100 group-hover:-translate-y-0 transition-all duration-300"
                     >Litta^^</a
                   >
+                  
                 </div>
               </div>
             </div>
@@ -276,12 +284,38 @@
         </div>
       </div>
     </section>
-    <div class="min-h-[70vh] ">
+    <div class="">
 
-      <section class="py-10  section-hero container mx-auto   ">
-     
-          <h3 class="text-pink-500 kawai-text font-bold md:text-5xl text-3xl underline text-center">About Me</h3>
+      <section class="py-10 h-full  section-hero container mx-auto    ">
+        <!-- bottom wave -->
        
+          <h3 class="text-pink-500 kawai-text font-bold md:text-5xl text-3xl underline text-center pb-5 z-10">About Me</h3>
+        <!-- avatar profile center -->
+        <div class="flex flex-wrap  justify-center w-full z-10">
+          
+            <div class="md:w-1/3 w-2/3 -ml-16 pt-10">
+              <img src="img/aboutnala.png" />
+            </div>
+        <div class="w-1/3 ">
+
+          <div class="chat chat-start mt-10 md:-ml-32 -ml-14 z-10 -mr-10">
+            <div class="chat-bubble chat-bubble-secondary text-white"> its me in 2d , im cute fun and kawai^^</div>
+          </div>
+        </div>
+        </div>
+        <div class="flex flex-wrap items-center px-5 justify-between w-full pt-10 z-10">
+          <div class="w-full md:w-1/2 z-10">
+            <h3 class="primary-text text-2xl font-bold text-pink-500">Tentang Saya</h3>
+            <p class="text-gray-600 md:text-lg  text-base mt-5 font-normal primary-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint quis vel ex eligendi accusantium incidunt officia corporis minus iste sequi modi dignissimos magnam, eius neque, illum expedita asperiores et exercitationem odit! Dolore maxime iure earum temporibus nobis, accusamus commodi, doloribus perferendis eveniet quas omnis illo perspiciatis suscipit at non dolorum.</p>
+          </div>
+          <div class="w-full md:w-1/2 mt-10 md:mt-0 z-10">
+            <h3 class="primary-text text-2xl font-bold text-pink-500">Social Media</h3>
+            <p class="text-gray-600 md:text-lg  text-base mt-5 font-normal primary-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore, impedit.</p>
+          </div>
+        </div>
+        
+    
+          
       </section>
     </div>
     
