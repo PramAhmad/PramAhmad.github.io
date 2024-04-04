@@ -1,4 +1,18 @@
 
+
+.section-hero.animate__pulse {
+	animation: pulse 1.5s  ease-in-out;
+  }
+  
+  @keyframes pulse {
+	from {
+	  transform: scale(1);
+	}
+	to {
+	  transform: scale(1.05);
+	}
+  }
+  
 @-webkit-keyframes animatetop {
 	from {
 		top: -300px;
@@ -171,3 +185,4 @@
 		border-radius: 50%;
 	}
 }
+
